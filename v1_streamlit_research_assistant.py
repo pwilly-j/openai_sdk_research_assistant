@@ -54,7 +54,7 @@ def create_business_analyst_assistant():
         Format the response in a clean, structured way that's easy to read.
         """,
         model="gpt-4-turbo",
-        tools=[{"type": "retrieval"}]  # Enable knowledge retrieval
+        tools=[{"type": "code_interpreter"}]  # Enable knowledge retrieval
     )
     return assistant
 
